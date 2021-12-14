@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>805.6,752</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1192,1017.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SendEmail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -72,7 +72,7 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="452,687.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="452,952.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="emails" />
       <Variable x:TypeArguments="x:String" Name="emailsString" />
@@ -82,6 +82,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="410.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;SendEmail activity started...&quot;]" />
     <ui:ReadTextFile Content="[emailsString]" DisplayName="Read Text File" FileName="[in_config(&quot;emailsPath&quot;)]" sap:VirtualizedContainerService.HintSize="410.4,80.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
     <Assign sap:VirtualizedContainerService.HintSize="410.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
@@ -106,9 +107,7 @@
             <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body="[String.Format(in_config(&quot;emailBodySuccess&quot;), DateTime.Now.ToString)]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" IsBodyHtml="False" IsDraft="False" Subject="[in_config(&quot;emailSubject&quot;)]" To="[email.ToString]">
               <ui:SendOutlookMail.Files>
                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                  <InArgument x:TypeArguments="x:String">
-                    <Literal x:TypeArguments="x:String">C:\Users\Andrei Gabor\Desktop\UNI\3rd YEAR\RPA\RPAProject\BitcoinPriceTracker\Data\prices.xlsx</Literal>
-                  </InArgument>
+                  <InArgument x:TypeArguments="x:String">C:\Users\Andrei Gabor\Desktop\UNI\3rd YEAR\RPA\RPAProject\BitcoinPriceTracker\Data\prices.xlsx</InArgument>
                 </scg:List>
               </ui:SendOutlookMail.Files>
             </ui:SendOutlookMail>
@@ -116,5 +115,6 @@
         </ActivityAction>
       </ui:ForEach.Body>
     </ui:ForEach>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="410.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;SendEmail activity successfully completed&quot;]" />
   </Sequence>
 </Activity>
