@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>855.2,1362.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>869.6,1362.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CoinbasePrice_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="33">
@@ -116,7 +116,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
               <ui:GetValue.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c5c61302-2b76-4f92-9ecd-ed6fbd6c23cf" InformativeScreenshot="1276333803711749ab7631aac841f2b8" Selector="&lt;webctrl tag='SPAN' class='AssetChartAmount__Number-sc-1b4douf-1 foyTCz' /&gt;&#xA;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c5c61302-2b76-4f92-9ecd-ed6fbd6c23cf" InformativeScreenshot="1276333803711749ab7631aac841f2b8" Selector="&lt;html app='chrome.exe' title='Bitcoin (BTC) Price, Charts, and News | Coinbase: bitcoin price, btc price, bitcoin coinbase' /&gt;&#xD;&#xA;&lt;webctrl parentid='main' tag='SPAN' class='AssetChartAmount__Number-sc-1b4douf-1 foyTCz' /&gt;&#xD;&#xA;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -131,7 +131,7 @@
             </ui:GetValue>
             <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_2">
               <ui:GetValue.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4e1b69b7-ca3d-4a52-9924-65b07345d999" InformativeScreenshot="b60b686f8b6b1c1a08d789665e3f41d4" Selector="&lt;html app='chrome.exe' title='Bitcoin (BTC) Price, Charts, and News | Coinbase: bitcoin price, btc price, bitcoin coinbase' /&gt;&#xA;&lt;webctrl parentid='main' tag='SPAN' idx='9' /&gt;&#xA;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4e1b69b7-ca3d-4a52-9924-65b07345d999" InformativeScreenshot="b60b686f8b6b1c1a08d789665e3f41d4" Selector="&lt;html app='chrome.exe' title='Bitcoin (BTC) Price, Charts, and News | Coinbase: bitcoin price, btc price, bitcoin coinbase' /&gt;&#xD;&#xA;&lt;webctrl parentid='main' tag='SPAN' class='AssetChartAmount__AmountSuper-sc-1b4douf-2 clhglv' idx='2' /&gt;&#xD;&#xA;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
